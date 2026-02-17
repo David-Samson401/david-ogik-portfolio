@@ -8,7 +8,7 @@ export const projects: Project[] = [
       "Real-time flight comparison with Amadeus API, OAuth2 authentication, and secure token management.",
     longDescription:
       "A production-grade flight search application that integrates with Amadeus API. Features include OAuth2 token caching to handle rate limits, real-time flight data, and responsive design for all devices.",
-    image: "/images/projects/flight-search/hero.jpg",
+    image: "/images/projects/flight-search/hero.png",
     tags: ["React", "Next.js", "OAuth2", "Tailwind", "REST API"],
     githubUrl: "https://github.com/David-Samson401/flight-search",
     liveUrl: "https://flight-search.davidogik.dev",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     title: "Poll Guru",
     description:
       "Real-time polling application built with SvelteKit, featuring live updates and data visualization.",
-    image: "/images/projects/poll-guru/hero.jpg",
+    image: "/images/projects/poll-guru/hero.png",
     tags: ["Svelte", "SvelteKit", "Tailwind", "Chart.js", "WebSockets"],
     githubUrl: "https://github.com/David-Samson401/poll-guru",
     liveUrl: "https://poll-guru.vercel.app",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     title: "DevHub Dashboard",
     description:
       "Developer dashboard for tracking GitHub activity, PRs, and repository metrics.",
-    image: "/images/projects/devhub/hero.jpg",
+    image: "/images/projects/devhub/hero.png",
     tags: ["React", "Zustand", "GitHub API", "Chart.js", "Tailwind"],
     githubUrl: "https://github.com/David-Samson401/devhub",
     liveUrl: "https://devhub.davidogik.dev",
