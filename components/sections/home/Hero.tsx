@@ -37,14 +37,14 @@ export default function Hero() {
 
           {/* CTA buttons */}
           <div className="mt-10 flex items-center justify-center gap-4 flex-col sm:flex-row">
-            <Button size="lg" asChild>
+            <Button size="lg" >
               <Link href="/work">
                 View my work
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
 
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="outline" >
               <Link href="/resume.pdf" target="_blank">
                 <FileText className="mr-2 h-4 w-4" />
                 Download resume
