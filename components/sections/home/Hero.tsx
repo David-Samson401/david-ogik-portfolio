@@ -38,14 +38,18 @@ export default function Hero() {
           {/* CTA buttons */}
           <div className="mt-10 flex items-center justify-center gap-4 flex-col sm:flex-row">
             <Button size="lg">
-              <Link href="/work">
+              <Link href="/work" className="flex items-center">
                 View my work
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
 
             <Button size="lg" variant="outline">
-              <Link href="/resume.pdf" target="_blank" className="group">
+              <Link
+                href="/resume.pdf"
+                target="_blank"
+                className="group flex items-center"
+              >
                 <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-0.5" />
                 Download resume
               </Link>

@@ -52,31 +52,57 @@ export const projects: Project[] = [
   },
   {
     id: "devhub",
-    title: "DevHub Dashboard",
+    title: "DevHub Dashboard (Next.js Crash Project)",
     description:
-      "Developer dashboard for tracking GitHub activity, PRs, and repository metrics.",
+      "A developer dashboard built during a Next.js intensive learning project. Features GitHub API integration, user authentication, and real-time data visualization.",
+    longDescription:
+      "Built as a hands-on project to master Next.js fundamentals including server-side rendering, API routes, and dynamic routing. Integrates with GitHub API to display user profiles, repositories, and activity metrics.",
     image: "/images/projects/devhub/hero.png",
-    tags: ["React", "Zustand", "GitHub API", "Chart.js", "Tailwind"],
-    githubUrl: "https://github.com/David-Samson401/devhub",
-    liveUrl: "https://next-crash-project-7cls.vercel.app/",
+    tags: ["Next.js", "React", "GitHub API", "Tailwind", "Authentication"],
+    githubUrl: "https://github.com/David-Samson401/Next-Crash-Project",
+    liveUrl: "https://next-crash-project-7cls.vercel.app",
+    featured: true,
+    year: 2024,
+    role: "Sole Developer",
+    metrics: {
+      lighthouse: 94,
+      users: "Learning project",
+    },
+  },
+  {
+    id: "javascript-amazon-project",
+    title: "Amazon-Style E-Commerce (JavaScript Mastery Project)",
+    description:
+      "Self-directed project to master vanilla JavaScript - built an interactive e-commerce interface with dynamic product rendering, cart functionality, and local storage persistence.",
+    longDescription:
+      "I built this project from scratch to deeply understand core JavaScript concepts: DOM manipulation, event handling, state management with local storage, and dynamic UI updates. The challenge was implementing a fully functional shopping cart experience without any frameworks - just pure JavaScript.",
+    image: "/images/projects/javascript-amazon/hero.png",
+    tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage", "DOM Manipulation"],
+    githubUrl: "https://github.com/David-Samson401/Javascript-Amazon-Project",
+    liveUrl: undefined,
+    featured: true,
+    year: 2023,
+    role: "Sole Developer",
+    metrics: {
+      lighthouse: 92,
+    },
+  },
+  {
+    id: "amazon-html-css-project",
+    title: "Amazon Homepage Clone (CSS Mastery Project)",
+    description:
+      "CSS mastery project - recreated Amazon's homepage from scratch using pure HTML and CSS to perfect responsive layouts, Flexbox, and Grid techniques.",
+    longDescription:
+      "This project was all about mastering CSS. I challenged myself to recreate Amazon's complex homepage layout without any frameworks, focusing on: pixel-perfect responsive design, CSS Grid for complex layouts, Flexbox for components, and mobile-first breakpoints. No framework, no JavaScript - just pure HTML and CSS craftsmanship.",
+    image: "/images/projects/amazon-html-css/hero.png",
+    tags: ["HTML5", "CSS3", "Flexbox", "CSS Grid", "Responsive Design"],
+    githubUrl: "https://github.com/David-Samson401/Amazon.com-HTML-CSS-Project",
+    liveUrl: undefined,
     featured: true,
     year: 2023,
     role: "Sole Developer",
     metrics: {
       lighthouse: 95,
-      users: "500+ developers",
     },
-  },
-  {
-    id: "recipe-app",
-    title: "Recipe Sharing Platform",
-    description:
-      "Community-driven recipe sharing with user authentication and rich text editing.",
-    image: "/images/projects/recipe-app/hero.jpg",
-    tags: ["Next.js", "MongoDB", "NextAuth", "Tailwind"],
-    githubUrl: "https://github.com/David-Samson401/recipe-app",
-    featured: false,
-    year: 2023,
-    role: "Sole Developer",
   },
 ];
