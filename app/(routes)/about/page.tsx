@@ -211,7 +211,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Accessibility */}}
+            {/* Accessibility */}
             <div className="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 cursor-pointer">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-500 mb-4 transition-colors group-hover:bg-blue-500/20">
                 <Accessibility className="h-6 w-6" />
