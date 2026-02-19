@@ -46,7 +46,7 @@ export default function Hero() {
 
             <Button size="lg" variant="outline">
               <Link
-                href="/resume.pdf"
+                href="/David-Ogik-Resume-Front-End-Developer.pdf"
                 target="_blank"
                 className="group flex items-center"
               >

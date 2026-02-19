@@ -69,7 +69,10 @@ export default function AboutPage() {
                   Get in Touch
                 </Button>
               </Link>
-              <Link href="/resume.pdf" target="_blank">
+              <Link
+                href="/David-Ogik-Resume-Front-End-Developer.pdf"
+                target="_blank"
+              >
                 <Button size="lg" variant="outline">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
@@ -473,7 +476,10 @@ export default function AboutPage() {
                   Contact Me
                 </Button>
               </Link>
-              <Link href="/resume.pdf" target="_blank">
+              <Link
+                href="/David-Ogik-Resume-Front-End-Developer.pdf"
+                target="_blank"
+              >
                 <Button size="lg" variant="outline">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
