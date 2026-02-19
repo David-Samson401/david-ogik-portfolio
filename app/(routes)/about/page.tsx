@@ -15,6 +15,7 @@ import {
   Sparkles,
   Target,
   Lightbulb,
+  Layers,
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
@@ -101,7 +102,9 @@ export default function AboutPage() {
                 When I discovered web development, I found the same principles
                 applied: understanding data flow, debugging complex
                 interactions, and optimizing performance. The transition felt
-                natural because the problem-solving mindset is universal.
+                natural because the problem-solving mindset is universal. Today,
+                I build full-stack applications like DevEvents with live demos
+                that showcase real-world functionality.
               </p>
             </div>
 
@@ -178,7 +181,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* Performance First */}
             <div className="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 cursor-pointer">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-500/10 text-yellow-500 mb-4 transition-colors group-hover:bg-yellow-500/20">
@@ -194,7 +197,21 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Accessibility */}
+            {/* Full-Stack Capabilities */}
+            <div className="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 cursor-pointer">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500/10 text-orange-500 mb-4 transition-colors group-hover:bg-orange-500/20">
+                <Layers className="h-6 w-6" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">
+                Full-Stack Ready
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                From MongoDB to Cloudinary, I build end-to-end. All my projects
+                have live demos—I ship, not just code.
+              </p>
+            </div>
+
+            {/* Accessibility */}}
             <div className="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 cursor-pointer">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-500 mb-4 transition-colors group-hover:bg-blue-500/20">
                 <Accessibility className="h-6 w-6" />
@@ -270,7 +287,8 @@ export default function AboutPage() {
                 <Badge variant="outline">TypeScript</Badge>
                 <Badge variant="outline">JavaScript</Badge>
                 <Badge variant="outline">Tailwind CSS</Badge>
-                <Badge variant="outline">WebSocket</Badge>
+                <Badge variant="outline">MongoDB</Badge>
+                <Badge variant="outline">Cloudinary</Badge>
               </div>
             </div>
 

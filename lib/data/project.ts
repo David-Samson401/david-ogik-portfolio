@@ -34,6 +34,75 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "devents",
+    title: "DevEvents - Developer Events Platform",
+    description:
+      "A full-stack event discovery platform where developers can find, create, and book conferences, meetups, and hackathons.",
+    longDescription:
+      "Built with Next.js, MongoDB, and Cloudinary, DevEvents allows users to browse upcoming tech events, view detailed agendas, book spots, and even create their own events. Features include image uploads, real-time booking, event filtering by mode (virtual/in-person/hybrid), and a complete admin flow for event creation.",
+    image: "/images/projects/devents/hero.png",
+    tags: ["Next.js", "MongoDB", "Cloudinary", "TypeScript", "Tailwind"],
+    githubUrl: "https://github.com/David-Samson401/Next-Crash-Project",
+    liveUrl: "https://next-crash-project-7cls.vercel.app",
+    featured: true,
+    year: 2024,
+    role: "Sole Developer",
+    metrics: {
+      lighthouse: 96,
+      users: "Live platform",
+    },
+    challenges: [
+      "Handling image uploads with Cloudinary",
+      "Building booking system without authentication",
+      "Managing event dates and filtering",
+      "Deploying with MongoDB on Vercel",
+    ],
+    solutions: [
+      "Integrated Cloudinary API with server actions",
+      "Used email-based booking with unique IDs",
+      "Implemented date comparisons with ISO strings",
+      "Added environment variables and IP whitelisting",
+    ],
+  },
+  {
+    id: "javascript-amazon-project",
+    title: "Amazon-Style E-Commerce (JavaScript Mastery Project)",
+    description:
+      "Interactive e-commerce interface built with vanilla JavaScript featuring dynamic product rendering, cart functionality, and local storage persistence.",
+    longDescription:
+      "I built this project from scratch to deeply understand core JavaScript concepts: DOM manipulation, event handling, state management with local storage, and dynamic UI updates. The challenge was implementing a fully functional shopping cart experience without any frameworks - just pure JavaScript.",
+    image: "/images/projects/javascript-amazon/hero.png",
+    tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage", "DOM Manipulation"],
+    githubUrl: "https://github.com/David-Samson401/Javascript-Amazon-Project",
+    liveUrl: "https://javascript-amazon-project-orcin.vercel.app/",
+    featured: true,
+    year: 2023,
+    role: "Sole Developer",
+    metrics: {
+      lighthouse: 92,
+      users: "40+ items",
+    },
+  },
+  {
+    id: "amazon-html-css-project",
+    title: "Amazon Homepage Clone (CSS Mastery Project)",
+    description:
+      "Pixel-perfect Amazon homepage clone built with pure HTML and CSS, demonstrating advanced Grid, Flexbox, and responsive design techniques.",
+    longDescription:
+      "This project was all about mastering CSS. I challenged myself to recreate Amazon's complex homepage layout without any frameworks, focusing on: pixel-perfect responsive design, CSS Grid for complex layouts, Flexbox for components, and mobile-first breakpoints. No framework, no JavaScript - just pure HTML and CSS craftsmanship.",
+    image: "/images/projects/amazon-html-css/hero.png",
+    tags: ["HTML5", "CSS3", "Flexbox", "CSS Grid", "Responsive Design"],
+    githubUrl: "https://github.com/David-Samson401/Amazon.com-HTML-CSS-Project",
+    liveUrl: "https://amazon-com-html-css-project.vercel.app/",
+    featured: true,
+    year: 2023,
+    role: "Sole Developer",
+    metrics: {
+      lighthouse: 95,
+      users: "20+ sections",
+    },
+  },
+  {
     id: "poll-guru",
     title: "Poll Guru",
     description:
@@ -48,61 +117,6 @@ export const projects: Project[] = [
     metrics: {
       lighthouse: 96,
       users: "1k+ polls created",
-    },
-  },
-  {
-    id: "devhub",
-    title: "DevHub Dashboard (Next.js Crash Project)",
-    description:
-      "A developer dashboard built during a Next.js intensive learning project. Features GitHub API integration, user authentication, and real-time data visualization.",
-    longDescription:
-      "Built as a hands-on project to master Next.js fundamentals including server-side rendering, API routes, and dynamic routing. Integrates with GitHub API to display user profiles, repositories, and activity metrics.",
-    image: "/images/projects/devhub/hero.png",
-    tags: ["Next.js", "React", "GitHub API", "Tailwind", "Authentication"],
-    githubUrl: "https://github.com/David-Samson401/Next-Crash-Project",
-    liveUrl: "https://next-crash-project-7cls.vercel.app",
-    featured: true,
-    year: 2024,
-    role: "Sole Developer",
-    metrics: {
-      lighthouse: 94,
-      users: "Learning project",
-    },
-  },
-  {
-    id: "javascript-amazon-project",
-    title: "Amazon-Style E-Commerce (JavaScript Mastery Project)",
-    description:
-      "Self-directed project to master vanilla JavaScript - built an interactive e-commerce interface with dynamic product rendering, cart functionality, and local storage persistence.",
-    longDescription:
-      "I built this project from scratch to deeply understand core JavaScript concepts: DOM manipulation, event handling, state management with local storage, and dynamic UI updates. The challenge was implementing a fully functional shopping cart experience without any frameworks - just pure JavaScript.",
-    image: "/images/projects/javascript-amazon/hero.png",
-    tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage", "DOM Manipulation"],
-    githubUrl: "https://github.com/David-Samson401/Javascript-Amazon-Project",
-    liveUrl: undefined,
-    featured: true,
-    year: 2023,
-    role: "Sole Developer",
-    metrics: {
-      lighthouse: 92,
-    },
-  },
-  {
-    id: "amazon-html-css-project",
-    title: "Amazon Homepage Clone (CSS Mastery Project)",
-    description:
-      "CSS mastery project - recreated Amazon's homepage from scratch using pure HTML and CSS to perfect responsive layouts, Flexbox, and Grid techniques.",
-    longDescription:
-      "This project was all about mastering CSS. I challenged myself to recreate Amazon's complex homepage layout without any frameworks, focusing on: pixel-perfect responsive design, CSS Grid for complex layouts, Flexbox for components, and mobile-first breakpoints. No framework, no JavaScript - just pure HTML and CSS craftsmanship.",
-    image: "/images/projects/amazon-html-css/hero.png",
-    tags: ["HTML5", "CSS3", "Flexbox", "CSS Grid", "Responsive Design"],
-    githubUrl: "https://github.com/David-Samson401/Amazon.com-HTML-CSS-Project",
-    liveUrl: undefined,
-    featured: true,
-    year: 2023,
-    role: "Sole Developer",
-    metrics: {
-      lighthouse: 95,
     },
   },
 ];
