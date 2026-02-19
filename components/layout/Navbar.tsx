@@ -1,14 +1,13 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X, Code2 } from "lucide-react";
 
 const navItems = [
-  { label: 'Work', href: '/work' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: "Work", href: "/work" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

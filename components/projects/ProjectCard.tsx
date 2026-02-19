@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Github, ExternalLink, Star, Users, Zap } from "lucide-react";
+import { Github, ExternalLink, Users, Zap } from "lucide-react";
 import { Project } from "@/types/project";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";

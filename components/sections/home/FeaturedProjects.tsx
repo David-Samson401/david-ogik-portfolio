@@ -16,7 +16,7 @@ export default function FeaturedProjects() {
             Featured Projects
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real-world applications I've built, from concept to production
+            Real-world applications I&apos;ve built, from concept to production
           </p>
         </div>
 
