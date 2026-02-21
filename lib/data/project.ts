@@ -10,7 +10,7 @@ export const projects: Project[] = [
       "A production-grade flight search application that integrates with the Amadeus Flight Offers API to provide real-time pricing and availability across hundreds of airlines. The application features a robust OAuth2 token management system with intelligent caching and automatic refresh handling to prevent rate limit issues. Users can search by multiple criteria including flexible dates, cabin class, and number of stops. The responsive UI delivers a seamless experience across all devices, with skeleton loading states and optimistic updates for perceived performance.",
     image: "/images/projects/flight-search/hero.png",
     tags: ["React", "Next.js", "OAuth2", "Tailwind", "REST API"],
-    githubUrl: "https://github.com/David-Samson401/flight-search",
+    githubUrl: "https://github.com/David-Samson401/flight-search-engine",
     liveUrl: "https://flight-search-engine-sandy.vercel.app/",
     featured: true,
     year: 2024,
