@@ -42,7 +42,7 @@ export const projects: Project[] = [
       "Built with Next.js, MongoDB, and Cloudinary, DevEvents allows users to browse upcoming tech events, view detailed agendas, book spots, and even create their own events. Features include image uploads, real-time booking, event filtering by mode (virtual/in-person/hybrid), and a complete admin flow for event creation.",
     image: "/images/projects/devents/hero.png",
     tags: ["Next.js", "MongoDB", "Cloudinary", "TypeScript", "Tailwind"],
-    githubUrl: "https://github.com/David-Samson401/Next-Crash-Project",
+    githubUrl: "https://github.com/David-Samson401/DevEvents",
     liveUrl: "https://next-crash-project-7cls.vercel.app",
     featured: true,
     year: 2024,
