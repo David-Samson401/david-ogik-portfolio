@@ -43,7 +43,7 @@ export const projects: Project[] = [
     image: "/images/projects/devents/hero.png",
     tags: ["Next.js", "MongoDB", "Cloudinary", "TypeScript", "Tailwind"],
     githubUrl: "https://github.com/David-Samson401/DevEvents",
-    liveUrl: "https://next-crash-project-7cls.vercel.app",
+    liveUrl: "https://next-crash-project-m6f5.vercel.app/",
     featured: true,
     year: 2024,
     role: "Sole Developer",

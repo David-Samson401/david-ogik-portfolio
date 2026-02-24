@@ -76,7 +76,7 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 
 - **Tech:** Next.js, MongoDB, Cloudinary, TypeScript, Tailwind
 - **Highlights:** Image uploads, booking system, event filtering
-- 🔗 [Live Demo](https://next-crash-project-7cls.vercel.app) • [GitHub](https://github.com/David-Samson401/DevEvents)
+- 🔗 [Live Demo](https://next-crash-project-m6f5.vercel.app/) • [GitHub](https://github.com/David-Samson401/DevEvents)
 
 ### 3. Amazon E-Commerce Clone (JavaScript)
 
