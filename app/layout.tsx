@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,7 +17,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "David Ogik - Frontend Developer",
-  description: "Mid-level frontend developer specializing in React and Next.js",
+  description:
+    "Mid-level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS. Based in Kenya, building performant and accessible web applications.",
+  openGraph: {
+    title: "David Ogik - Frontend Developer",
+    description:
+      "Mid-level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS.",
+    url: "https://david-ogik-portfolio-jjvb.vercel.app",
+    siteName: "David Ogik Portfolio",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "David Ogik - Frontend Developer",
+    description:
+      "Mid-level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS.",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +48,8 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
+        <Analytics />
       </body>
     </html>
   );

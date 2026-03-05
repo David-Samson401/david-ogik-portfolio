@@ -28,34 +28,38 @@ export async function POST(request: NextRequest) {
 
     const { name, email, message } = result.data;
 
-    // Log the contact submission (replace with Resend integration later)
-    console.log("=".repeat(50));
-    console.log("📧 New Contact Form Submission");
-    console.log("=".repeat(50));
-    console.log(`Name: ${name}`);
-    console.log(`Email: ${email}`);
-    console.log(`Message: ${message}`);
-    console.log(`Timestamp: ${new Date().toISOString()}`);
-    console.log("=".repeat(50));
+    // Send email via Resend if API key is configured
+    if (process.env.RESEND_API_KEY) {
+      const { Resend } = await import("resend");
+      const resend = new Resend(process.env.RESEND_API_KEY);
 
-    // TODO: Integrate with Resend for email delivery
-    // Example Resend integration:
-    //
-    // import { Resend } from 'resend';
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    //
-    // await resend.emails.send({
-    //   from: 'Portfolio Contact <contact@davidogik.dev>',
-    //   to: ['divokorino284@gmail.com'],
-    //   subject: `New Contact: ${name}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${name}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${message}</p>
-    //   `,
-    // });
+      await resend.emails.send({
+        from: "Portfolio Contact <onboarding@resend.dev>",
+        to: ["divokorino284@gmail.com"],
+        replyTo: email,
+        subject: `New Contact from ${name}`,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong></p>
+          <p style="white-space: pre-wrap;">${message}</p>
+        `,
+      });
+    } else {
+      // Fallback: log to console in development
+      console.log("=".repeat(50));
+      console.log("📧 New Contact Form Submission");
+      console.log("=".repeat(50));
+      console.log(`Name: ${name}`);
+      console.log(`Email: ${email}`);
+      console.log(`Message: ${message}`);
+      console.log(`Timestamp: ${new Date().toISOString()}`);
+      console.log("=".repeat(50));
+      console.warn(
+        "⚠️  RESEND_API_KEY not set — email not sent. Add it to .env.local to enable email delivery.",
+      );
+    }
 
     return NextResponse.json(
       { success: true, message: "Message sent successfully" },

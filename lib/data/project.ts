@@ -65,44 +65,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "javascript-amazon-project",
-    title: "Amazon-Style E-Commerce (JavaScript Mastery Project)",
-    description:
-      "Interactive e-commerce interface built with vanilla JavaScript featuring dynamic product rendering, cart functionality, and local storage persistence.",
-    longDescription:
-      "I built this project from scratch to deeply understand core JavaScript concepts: DOM manipulation, event handling, state management with local storage, and dynamic UI updates. The challenge was implementing a fully functional shopping cart experience without any frameworks - just pure JavaScript.",
-    image: "/images/projects/javascript-amazon/hero.png",
-    tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage", "DOM Manipulation"],
-    githubUrl: "https://github.com/David-Samson401/Javascript-Amazon-Project",
-    liveUrl: "https://javascript-amazon-project-orcin.vercel.app/",
-    featured: true,
-    year: 2023,
-    role: "Sole Developer",
-    metrics: {
-      lighthouse: 92,
-      users: "40+ items",
-    },
-  },
-  {
-    id: "amazon-html-css-project",
-    title: "Amazon Homepage Clone (CSS Mastery Project)",
-    description:
-      "Pixel-perfect Amazon homepage clone built with pure HTML and CSS, demonstrating advanced Grid, Flexbox, and responsive design techniques.",
-    longDescription:
-      "This project was all about mastering CSS. I challenged myself to recreate Amazon's complex homepage layout without any frameworks, focusing on: pixel-perfect responsive design, CSS Grid for complex layouts, Flexbox for components, and mobile-first breakpoints. No framework, no JavaScript - just pure HTML and CSS craftsmanship.",
-    image: "/images/projects/amazon-html-css/hero.png",
-    tags: ["HTML5", "CSS3", "Flexbox", "CSS Grid", "Responsive Design"],
-    githubUrl: "https://github.com/David-Samson401/Amazon.com-HTML-CSS-Project",
-    liveUrl: "https://amazon-com-html-css-project.vercel.app/",
-    featured: true,
-    year: 2023,
-    role: "Sole Developer",
-    metrics: {
-      lighthouse: 95,
-      users: "20+ sections",
-    },
-  },
-  {
     id: "poll-guru",
     title: "Poll Guru",
     description:

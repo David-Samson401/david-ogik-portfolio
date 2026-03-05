@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { projects } from "@/lib/data/project";
 import ProjectCard from "@/components/projects/ProjectCard";
-import { Button } from "@/components/ui/Button";
 
 export default function FeaturedProjects() {
   const featuredProjects = projects.filter((p) => p.featured);
@@ -29,12 +28,13 @@ export default function FeaturedProjects() {
 
         {/* View All Link */}
         <div className="mt-12 text-center">
-          <Button variant="outline" size="lg">
-            <Link href="/work">
-              View all projects
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
+          <Link
+            href="/work"
+            className="inline-flex items-center justify-center gap-2 h-12 px-6 text-lg rounded-md font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
+          >
+            View all projects
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </section>

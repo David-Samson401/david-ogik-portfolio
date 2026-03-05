@@ -69,15 +69,17 @@ export default function AboutPage() {
                   Get in Touch
                 </Button>
               </Link>
-              <Link
-                href="/David-Ogik-Resume-Front-End-Developer.pdf"
+              <a
+                href="/David-Ogik-Resume.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
+                download
               >
                 <Button size="lg" variant="outline">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -476,15 +478,17 @@ export default function AboutPage() {
                   Contact Me
                 </Button>
               </Link>
-              <Link
-                href="/David-Ogik-Resume-Front-End-Developer.pdf"
+              <a
+                href="/David-Ogik-Resume.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
+                download
               >
                 <Button size="lg" variant="outline">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </Button>
-              </Link>
+              </a>
             </div>
 
             {/* Social Links */}
@@ -500,7 +504,7 @@ export default function AboutPage() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
-                href="https://linkedin.com/in/david-ogik-17784627a"
+                href="https://www.linkedin.com/in/david-ogik-dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
