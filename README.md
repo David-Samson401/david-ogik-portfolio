@@ -5,46 +5,31 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=flat-square&logo=tailwind-css)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)
 ![Vercel](https://img.shields.io/badge/Vercel-Deployed-000?style=flat-square&logo=vercel)
-![Lighthouse](https://img.shields.io/badge/Lighthouse-98+-4285F4?style=flat-square&logo=lighthouse)
 
 A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend Developer** with 4+ years of experience building production web applications.
 
-## 🚀 Live Demo
+## Live Demo
 
-**[→ View Live Portfolio](https://david-ogik-portfolio-jjvb.vercel.app/)**
-
----
-
-## 📸 Screenshots
-
-| Homepage                                     | Projects Grid                                |
-| -------------------------------------------- | -------------------------------------------- |
-| ![Homepage](public/screenshots/homepage.png) | ![Projects](public/screenshots/projects.png) |
-
-| Case Study                                       | Mobile View                              |
-| ------------------------------------------------ | ---------------------------------------- |
-| ![Case Study](public/screenshots/case-study.png) | ![Mobile](public/screenshots/mobile.png) |
-
-> 💡 _Screenshots coming soon — run locally to preview_
+**[-> View Live Portfolio](https://david-ogik-portfolio-jjvb.vercel.app/)**
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎯 **5 Featured Projects** with detailed case studies, challenges & solutions
-- 🌓 **Dark/Light Mode** with system preference detection
-- 📱 **Fully Responsive** — mobile-first design approach
-- ⚡ **98+ Lighthouse Score** — optimized for performance
-- 📧 **Contact Form** with server-side validation and API route
-- 📄 **Resume Download** — PDF resume readily available
-- 🔍 **Project Filtering** — filter by technology stack
-- 🎨 **Modern UI** — clean design with subtle animations
-- ♿ **Accessible** — WCAG 2.2 AA compliant
-- 🚀 **Deployed on Vercel** — CI/CD with GitHub integration
+- **5 Featured Projects** with detailed case studies, challenges & solutions
+- **Dark Theme** -- clean, modern dark interface
+- **Fully Responsive** -- mobile-first design approach
+- **98+ Lighthouse Score** -- optimized for performance
+- **Contact Form** with Zod validation and Resend email integration
+- **Resume Download** -- PDF resume readily available
+- **Project Filtering** -- filter by technology stack
+- **Modern UI** -- custom components with Tailwind CSS v4
+- **Accessible** -- semantic HTML, keyboard navigation, ARIA labels
+- **Deployed on Vercel** -- CI/CD with GitHub integration
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category             | Technologies                       |
 | -------------------- | ---------------------------------- |
@@ -52,15 +37,16 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 | **Language**         | TypeScript 5                       |
 | **Styling**          | Tailwind CSS v4, CSS Variables     |
 | **UI Components**    | Custom components, Lucide Icons    |
-| **State Management** | React useState, Zustand            |
-| **Form Handling**    | React Hook Form, Zod validation    |
-| **API**              | Next.js API Routes, Server Actions |
+| **Validation**       | Zod                                |
+| **API**              | Next.js API Routes                 |
+| **Email**            | Resend                             |
 | **Deployment**       | Vercel                             |
-| **Other**            | ESLint, Prettier                   |
+| **Analytics**        | Vercel Analytics                   |
+| **Tooling**          | ESLint, Prettier                   |
 
 ---
 
-## 📂 Projects Showcase
+## Projects Showcase
 
 ### 1. Flight Search Engine
 
@@ -68,7 +54,7 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 
 - **Tech:** React, Next.js, OAuth2, Tailwind, REST API
 - **Highlights:** Token management, rate limiting, 98 Lighthouse score
-- 🔗 [Live Demo](https://flight-search-engine-sandy.vercel.app/) • [GitHub](https://github.com/David-Samson401/flight-search)
+- [Live Demo](https://flight-search-engine-sandy.vercel.app/) . [GitHub](https://github.com/David-Samson401/flight-search)
 
 ### 2. DevEvents - Developer Events Platform
 
@@ -76,7 +62,7 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 
 - **Tech:** Next.js, MongoDB, Cloudinary, TypeScript, Tailwind
 - **Highlights:** Image uploads, booking system, event filtering
-- 🔗 [Live Demo](https://next-crash-project-m6f5.vercel.app/) • [GitHub](https://github.com/David-Samson401/DevEvents)
+- [Live Demo](https://next-crash-project-m6f5.vercel.app/) . [GitHub](https://github.com/David-Samson401/DevEvents)
 
 ### 3. Amazon E-Commerce Clone (JavaScript)
 
@@ -84,7 +70,7 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 
 - **Tech:** JavaScript, HTML5, CSS3, LocalStorage, DOM Manipulation
 - **Highlights:** Cart functionality, dynamic rendering, 40+ products
-- 🔗 [Live Demo](https://javascript-amazon-project-orcin.vercel.app/) • [GitHub](https://github.com/David-Samson401/Javascript-Amazon-Project)
+- [Live Demo](https://javascript-amazon-project-orcin.vercel.app/) . [GitHub](https://github.com/David-Samson401/Javascript-Amazon-Project)
 
 ### 4. Amazon Homepage Clone (CSS)
 
@@ -92,7 +78,7 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 
 - **Tech:** HTML5, CSS3, Flexbox, CSS Grid, Responsive Design
 - **Highlights:** Pure CSS, 20+ sections, mobile-first approach
-- 🔗 [Live Demo](https://amazon-com-html-css-project.vercel.app/) • [GitHub](https://github.com/David-Samson401/Amazon.com-HTML-CSS-Project)
+- [Live Demo](https://amazon-com-html-css-project.vercel.app/) . [GitHub](https://github.com/David-Samson401/Amazon.com-HTML-CSS-Project)
 
 ### 5. Poll Guru
 
@@ -100,16 +86,16 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 
 - **Tech:** Svelte, SvelteKit, Tailwind, Chart.js, WebSockets
 - **Highlights:** Real-time updates, data visualization, 1k+ polls
-- 🔗 [Live Demo](https://poll-guru.vercel.app) • [GitHub](https://github.com/David-Samson401/poll-guru)
+- [Live Demo](https://poll-guru.vercel.app) . [GitHub](https://github.com/David-Samson401/poll-guru)
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
 - Node.js 18+
-- npm or yarn
+- pnpm
 
 ### Installation
 
@@ -121,10 +107,10 @@ git clone https://github.com/David-Samson401/david-ogik-portfolio.git
 cd david-ogik-portfolio
 
 # Install dependencies
-npm install
+pnpm install
 
 # Start development server
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -132,13 +118,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ### Build for Production
 
 ```bash
-npm run build
-npm start
+pnpm build
+pnpm start
 ```
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 david-ogik-portfolio/
@@ -156,9 +142,9 @@ david-ogik-portfolio/
 ├── components/
 │   ├── layout/             # Navbar, Footer
 │   ├── projects/           # ProjectCard
-│   ├── sections/           # Hero, FeaturedProjects
-│   ├── shared/             # Shared components
+│   ├── sections/           # Hero, FeaturedProjects, ContactForm
 │   └── ui/                 # Button, Badge, Card
+├── hooks/                  # Custom React hooks
 ├── lib/
 │   ├── data/
 │   │   └── project.ts      # Projects data
@@ -171,7 +157,7 @@ david-ogik-portfolio/
 
 ---
 
-## 🔧 Environment Variables
+## Environment Variables
 
 Create a `.env.local` file for local development:
 
@@ -182,34 +168,21 @@ RESEND_API_KEY=your_resend_api_key
 
 ---
 
-## 📊 Performance
-
-| Metric         | Score |
-| -------------- | ----- |
-| Performance    | 98    |
-| Accessibility  | 100   |
-| Best Practices | 100   |
-| SEO            | 100   |
-
-_Lighthouse scores measured on production deployment_
-
----
-
-## 🤝 Connect
+## Connect
 
 - **Portfolio:** [david-ogik-portfolio-jjvb.vercel.app](https://david-ogik-portfolio-jjvb.vercel.app/)
 - **GitHub:** [github.com/David-Samson401](https://github.com/David-Samson401)
-- **LinkedIn:** [linkedin.com/in/david-ogik-17784627a](https://linkedin.com/in/david-ogik-17784627a)
+- **LinkedIn:** [linkedin.com/in/david-ogik-dev](https://linkedin.com/in/david-ogik-dev)
 - **Email:** divokorino284@gmail.com
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
 <p align="center">
-  Built with ❤️ by <a href="https://github.com/David-Samson401">David Ogik</a>
+  Built by <a href="https://github.com/David-Samson401">David Ogik</a>
 </p>

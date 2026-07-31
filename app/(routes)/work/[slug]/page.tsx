@@ -27,9 +27,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
   const project = projects.find((p) => p.id === slug);
 
   if (!project) {
-    return {
-      title: "Project Not Found",
-    };
+    return { title: "Project Not Found" };
   }
 
   return {
@@ -47,42 +45,40 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="relative isolate overflow-hidden border-b border-border">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_40%_at_50%_60%,rgba(59,130,246,0.05),transparent)]" />
+    <main className="min-h-screen">
+      {/* Hero */}
+      <section className="relative isolate overflow-hidden border-b border-border/60 pt-14 sm:pt-20 pb-10 sm:pb-14">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-primary/3 blur-[120px]" />
+        </div>
 
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-          {/* Back Button */}
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Back link */}
           <Link
             href="/work"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 group"
           >
-            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+            <ArrowLeft className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-1" />
             Back to all projects
           </Link>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Project Info */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Info */}
             <div>
-              {/* Meta info */}
               <div className="flex items-center gap-3 text-sm text-muted-foreground mb-4">
                 <span>{project.year}</span>
-                <span className="h-1 w-1 rounded-full bg-muted-foreground" />
+                <span className="h-1 w-1 rounded-full bg-muted-foreground/40" />
                 <span>{project.role}</span>
               </div>
 
-              {/* Title */}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-4">
                 {project.title}
               </h1>
 
-              {/* Description */}
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 {project.longDescription || project.description}
               </p>
 
-              {/* Tags */}
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tags.map((tag) => (
                   <Badge key={tag} variant="secondary">
@@ -91,8 +87,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 ))}
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3">
                 {project.liveUrl && (
                   <Link
                     href={project.liveUrl}
@@ -120,8 +115,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </div>
 
-            {/* Project Image */}
-            <div className="relative aspect-video rounded-xl overflow-hidden border border-border shadow-2xl">
+            {/* Image */}
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/60 shadow-2xl">
               <Image
                 src={project.image}
                 alt={`${project.title} screenshot`}
@@ -135,11 +130,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
       </section>
 
-      {/* Challenges Section */}
+      {/* Challenges */}
       {project.challenges && project.challenges.length > 0 && (
-        <section className="py-16 sm:py-20 border-b border-border">
+        <section className="py-12 sm:py-16 border-b border-border/60">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-10">
+            <div className="mb-8">
+              <p className="text-sm font-medium text-warning mb-2">Challenges</p>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
                 Challenges Faced
               </h2>
@@ -148,17 +144,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-5">
               {project.challenges.map((challenge, index) => (
                 <div
                   key={index}
-                  className="group relative rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5"
+                  className="group rounded-xl border border-border/60 bg-card p-5 transition-all hover:border-warning/30 hover:shadow-md"
                 >
                   <div className="flex gap-4">
-                    <div className="shrink-0">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
-                        <AlertTriangle className="h-5 w-5" />
-                      </div>
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-warning/10 text-warning">
+                      <AlertTriangle className="h-4 w-4" />
                     </div>
                     <div>
                       <h3 className="font-medium text-foreground mb-1">
@@ -176,15 +170,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </section>
       )}
 
-      {/* Solutions Section */}
+      {/* Solutions */}
       {project.solutions && project.solutions.length > 0 && (
-        <section className="relative py-16 sm:py-20 overflow-hidden">
-          {/* Gradient background */}
-          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-primary/5 via-primary/10 to-transparent" />
-          <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_50%)]" />
+        <section className="relative py-12 sm:py-16 overflow-hidden">
+          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-success/5 via-transparent to-transparent" />
 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-10">
+            <div className="mb-8">
+              <p className="text-sm font-medium text-success mb-2">Solutions</p>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
                 Solutions Implemented
               </h2>
@@ -194,17 +187,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              {/* Solutions List */}
               <div className="space-y-4">
                 {project.solutions.map((solution, index) => (
                   <div
                     key={index}
-                    className="flex gap-4 rounded-xl border border-border bg-card/80 backdrop-blur-sm p-5 transition-all duration-300 hover:bg-card hover:border-primary/30"
+                    className="flex gap-4 rounded-xl border border-border/60 bg-card p-5 transition-all hover:border-success/30 hover:shadow-md"
                   >
-                    <div className="shrink-0">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-green-500/10 text-green-500">
-                        <CheckCircle className="h-5 w-5" />
-                      </div>
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-success/10 text-success">
+                      <CheckCircle className="h-4 w-4" />
                     </div>
                     <div>
                       <h3 className="font-medium text-foreground mb-1">
@@ -218,32 +208,30 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 ))}
               </div>
 
-              {/* Code Snippet */}
-              <div className="rounded-xl border border-border bg-zinc-950 p-6 overflow-hidden">
+              {/* Code snippet */}
+              <div className="rounded-2xl border border-border/60 bg-[#0A0B10] p-5 overflow-hidden">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="flex gap-1.5">
-                    <div className="h-3 w-3 rounded-full bg-red-500/80" />
-                    <div className="h-3 w-3 rounded-full bg-yellow-500/80" />
-                    <div className="h-3 w-3 rounded-full bg-green-500/80" />
+                    <div className="h-2.5 w-2.5 rounded-full bg-red-500/70" />
+                    <div className="h-2.5 w-2.5 rounded-full bg-warning/70" />
+                    <div className="h-2.5 w-2.5 rounded-full bg-success/70" />
                   </div>
-                  <span className="text-xs text-zinc-500 ml-2">
+                  <span className="text-[11px] text-muted-foreground ml-2 font-mono">
                     tokenManager.ts
                   </span>
                 </div>
-                <pre className="text-sm overflow-x-auto">
-                  <code className="text-zinc-300">
+                <pre className="text-xs overflow-x-auto">
+                  <code className="text-muted-foreground">
                     {`class TokenManager {
   private token: string | null = null;
   private expiresAt: number = 0;
   private refreshPromise: Promise<string> | null = null;
 
   async getToken(): Promise<string> {
-    // Return cached token if valid
     if (this.token && Date.now() < this.expiresAt) {
       return this.token;
     }
 
-    // Prevent race conditions with single refresh
     if (!this.refreshPromise) {
       this.refreshPromise = this.refresh();
     }
@@ -270,36 +258,35 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </section>
       )}
 
-      {/* Project Details Section */}
+      {/* Metrics */}
       {project.metrics && (
-        <section className="py-16 sm:py-24">
+        <section className="py-12 sm:py-16 border-t border-border/60">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-md">
-              {/* Metrics */}
-              <div className="rounded-xl border border-border bg-card p-6">
+              <div className="rounded-2xl border border-border/60 bg-card p-6">
                 <h2 className="text-lg font-semibold text-foreground mb-4">
                   Key Metrics
                 </h2>
                 <dl className="space-y-3">
                   {project.metrics.lighthouse && (
-                    <div className="flex justify-between">
-                      <dt className="text-muted-foreground">Lighthouse</dt>
-                      <dd className="font-medium text-foreground">
+                    <div className="flex justify-between items-center">
+                      <dt className="text-muted-foreground text-sm">Lighthouse</dt>
+                      <dd className="font-semibold text-success">
                         {project.metrics.lighthouse}/100
                       </dd>
                     </div>
                   )}
                   {project.metrics.users && (
-                    <div className="flex justify-between">
-                      <dt className="text-muted-foreground">Users</dt>
+                    <div className="flex justify-between items-center">
+                      <dt className="text-muted-foreground text-sm">Users</dt>
                       <dd className="font-medium text-foreground">
                         {project.metrics.users}
                       </dd>
                     </div>
                   )}
                   {project.metrics.performance && (
-                    <div className="flex justify-between">
-                      <dt className="text-muted-foreground">Performance</dt>
+                    <div className="flex justify-between items-center">
+                      <dt className="text-muted-foreground text-sm">Performance</dt>
                       <dd className="font-medium text-foreground">
                         {project.metrics.performance}
                       </dd>
