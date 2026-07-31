@@ -12,7 +12,7 @@ export default function WorkFilter() {
   const [sortBy, setSortBy] = useState<SortOption>("newest");
 
   const allTechnologies = useMemo(() => {
-    const tags = projects.flatMap((project) => project.tags);
+    const tags = projects.flatMap((p) => p.tags);
     return Array.from(new Set(tags)).sort();
   }, []);
 
@@ -20,7 +20,7 @@ export default function WorkFilter() {
     let result = [...projects];
 
     if (activeFilter !== "All") {
-      result = result.filter((project) => project.tags.includes(activeFilter));
+      result = result.filter((p) => p.tags.includes(activeFilter));
     }
 
     switch (sortBy) {
@@ -40,22 +40,22 @@ export default function WorkFilter() {
 
   return (
     <>
-      {/* Filters Section */}
-      <section className="border-b border-border bg-card/50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+      {/* Filters bar */}
+      <section className="border-b border-border/60 bg-card/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Filter className="h-4 w-4" />
                 <span>Filter:</span>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 <button
                   onClick={() => setActiveFilter("All")}
-                  className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors cursor-pointer ${
+                  className={`rounded-lg px-3.5 py-1.5 text-sm font-medium transition-all duration-200 ${
                     activeFilter === "All"
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                      ? "bg-primary text-primary-foreground shadow-sm"
+                      : "bg-secondary text-muted-foreground hover:bg-secondary/80 hover:text-foreground"
                   }`}
                 >
                   All
@@ -64,10 +64,10 @@ export default function WorkFilter() {
                   <button
                     key={tech}
                     onClick={() => setActiveFilter(tech)}
-                    className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors cursor-pointer ${
+                    className={`rounded-lg px-3.5 py-1.5 text-sm font-medium transition-all duration-200 ${
                       activeFilter === tech
-                        ? "bg-primary text-primary-foreground"
-                        : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                        ? "bg-primary text-primary-foreground shadow-sm"
+                        : "bg-secondary text-muted-foreground hover:bg-secondary/80 hover:text-foreground"
                     }`}
                   >
                     {tech}
@@ -84,7 +84,7 @@ export default function WorkFilter() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as SortOption)}
-                className="rounded-lg border border-input bg-background px-3 py-1.5 text-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-ring"
+                className="rounded-lg border border-input bg-card px-3 py-1.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
               >
                 <option value="newest">Newest</option>
                 <option value="oldest">Oldest</option>
@@ -95,8 +95,8 @@ export default function WorkFilter() {
         </div>
       </section>
 
-      {/* Projects Grid */}
-      <section className="py-12 sm:py-16">
+      {/* Projects grid */}
+      <section className="py-10 sm:py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="mb-8 text-sm text-muted-foreground">
             Showing {filteredProjects.length} of {projects.length} projects
@@ -121,7 +121,7 @@ export default function WorkFilter() {
               </p>
               <button
                 onClick={() => setActiveFilter("All")}
-                className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors cursor-pointer"
+                className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all duration-200"
               >
                 Clear filter
               </button>

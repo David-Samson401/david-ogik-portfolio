@@ -2,6 +2,37 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    id: "nyumba-find",
+    title: "Nyumba Find — Property Search Platform",
+    description:
+      "Interactive property discovery platform with map-based search, Supabase backend, and smooth animations powered by Framer Motion.",
+    longDescription:
+      "A full-stack property search platform built with Next.js 16 and Supabase. \"Nyumba\" means \"house\" in Swahili — the app enables users to discover rental properties through an interactive Leaflet map with custom markers and popups. Features include server-side search with real-time filtering by location, price range, and property type, backed by a Supabase PostgreSQL database with Row-Level Security. Smooth page transitions and micro-interactions are handled by Framer Motion, while the UI is built with Radix primitives and Tailwind CSS for a polished, accessible experience across all devices.",
+    image: "/images/projects/nyumba-find/hero.png",
+    tags: ["Next.js", "TypeScript", "Supabase", "Leaflet", "Tailwind", "Framer Motion"],
+    githubUrl: "https://github.com/David-Samson401/nyumba-find",
+    liveUrl: "https://nyumba-find.vercel.app",
+    featured: true,
+    year: 2026,
+    role: "Sole Developer",
+    metrics: {
+      lighthouse: 97,
+      users: "Live platform",
+    },
+    challenges: [
+      "Integrating interactive Leaflet maps with server-rendered React components required careful handling of browser-only APIs and hydration mismatches",
+      "Implementing Supabase Row-Level Security policies to enforce property data access rules at the database level without compromising query performance",
+      "Coordinating map viewport state with search results across URL search params, requiring bidirectional sync between the map and filter panels",
+      "Managing Next.js 16 server components alongside client-side map interactions, balancing SSR benefits with interactive map requirements",
+    ],
+    solutions: [
+      "Used dynamic imports with `ssr: false` for Leaflet components and created a client-side Map wrapper that hydrates after mount, eliminating hydration errors",
+      "Designed a layered RLS policy system with helper database functions that enforced property visibility rules while maintaining sub-100ms query times",
+      "Built a custom `useMapSync` hook that watches URL search params changes and updates the map bounds/filters reactively using React 19's `use` hook",
+      "Structured the app with clear server/client boundaries: server components handle data fetching and SEO, while client islands manage map interactivity and animations",
+    ],
+  },
+  {
     id: "flight-search",
     title: "Flight Search Engine",
     description:
@@ -65,20 +96,65 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "poll-guru",
-    title: "Poll Guru",
+    id: "javascript-amazon",
+    title: "Amazon E-Commerce Clone (JavaScript)",
     description:
-      "Real-time polling application built with SvelteKit, featuring live updates and data visualization.",
-    image: "/images/projects/poll-guru/hero.png",
-    tags: ["Svelte", "SvelteKit", "Tailwind", "Chart.js", "WebSockets"],
-    githubUrl: "https://github.com/David-Samson401/poll-guru",
-    liveUrl: "https://poll-guru.vercel.app",
+      "Interactive e-commerce interface built with vanilla JavaScript featuring cart functionality and dynamic product rendering.",
+    longDescription:
+      "A fully interactive Amazon e-commerce clone built from scratch with vanilla JavaScript. Features include a dynamic product catalog with 40+ items, a fully functional shopping cart with add/remove/update capabilities, persistent state via LocalStorage, and real-time order summary calculations. The UI is built with semantic HTML5 and CSS3, demonstrating strong DOM manipulation skills and an understanding of state management without frameworks.",
+    image: "/images/projects/javascript-amazon/hero.png",
+    tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage", "DOM"],
+    githubUrl: "https://github.com/David-Samson401/Javascript-Amazon-Project",
+    liveUrl: "https://javascript-amazon-project-orcin.vercel.app/",
     featured: true,
-    year: 2024,
+    year: 2023,
     role: "Sole Developer",
     metrics: {
-      lighthouse: 96,
-      users: "1k+ polls created",
+      lighthouse: 95,
+      users: "40+ products",
     },
+    challenges: [
+      "Managing complex cart state without a framework required careful orchestration of DOM updates and event handling",
+      "Persisting cart data across page reloads while handling edge cases like expired storage and data corruption",
+      "Rendering dynamic product listings efficiently with filtering and sorting without virtual DOM diffing",
+      "Calculating real-time order totals across multiple tax and shipping scenarios",
+    ],
+    solutions: [
+      "Built a centralized state object with pub/sub pattern for predictable updates and clean separation from DOM logic",
+      "Implemented a storage abstraction layer with JSON serialization, schema validation, and graceful fallback defaults",
+      "Used DocumentFragment for batch DOM updates and template cloning to minimize reflow and layout thrashing",
+      "Created a modular pricing utility with chainable calculation methods that handle all edge cases deterministically",
+    ],
+  },
+  {
+    id: "amazon-html-css",
+    title: "Amazon Homepage Clone (CSS)",
+    description:
+      "Pixel-perfect Amazon homepage recreation using pure HTML5 and CSS3 with responsive design.",
+    longDescription:
+      "A meticulous pixel-perfect clone of the Amazon.com homepage built entirely with HTML5 and CSS3. The project recreates 20+ distinct sections including the navigation bar, hero carousel, product grids, recommendation carousels, and footer. It demonstrates mastery of CSS layout techniques including Flexbox, CSS Grid, positioning, and responsive design patterns. Every detail from hover states to spacing matches the original, achieving a faithful reproduction without any JavaScript.",
+    image: "/images/projects/amazon-html-css/hero.png",
+    tags: ["HTML5", "CSS3", "Flexbox", "CSS Grid", "Responsive"],
+    githubUrl: "https://github.com/David-Samson401/Amazon.com-HTML-CSS-Project",
+    liveUrl: "https://amazon-com-html-css-project.vercel.app/",
+    featured: true,
+    year: 2023,
+    role: "Sole Developer",
+    metrics: {
+      lighthouse: 98,
+      users: "20+ sections",
+    },
+    challenges: [
+      "Recreating complex nested layouts from a live production site without access to source code, requiring careful inspection of visual patterns",
+      "Building a fully responsive design that matches Amazon's adaptive layout behavior across mobile, tablet, and desktop breakpoints",
+      "Managing CSS specificity across 20+ distinct sections while keeping styles maintainable and avoiding unintended style leaks",
+      "Implementing the multi-level navigation menu with flyout submenus using only CSS hover states and sibling selectors",
+    ],
+    solutions: [
+      "Used browser DevTools to extract layout patterns and color palettes, then rebuilt from scratch with clean architectural decisions rather than copying code",
+      "Adopted a mobile-first approach with progressive enhancement, using min-width media queries to layer complexity at each breakpoint",
+      "Organized CSS using a component-scoped naming convention (BEM-inspired) that mirrors section boundaries, eliminating cascade conflicts",
+      "Leveraged CSS :hover, :focus-within, and adjacent sibling combinators to create fully functional dropdown menus with smooth transitions",
+    ],
   },
 ];

@@ -1,40 +1,37 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { projects } from "@/lib/data/project";
 import ProjectCard from "@/components/projects/ProjectCard";
+import Link from "next/link";
 
 export default function FeaturedProjects() {
-  const featuredProjects = projects.filter((p) => p.featured);
+  const featured = projects.filter((p) => p.featured);
 
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-10 sm:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Featured Projects
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real-world applications I&apos;ve built, from concept to production
-          </p>
-        </div>
-
-        {/* Projects Grid */}
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-
-        {/* View All Link */}
-        <div className="mt-12 text-center">
+        {/* Section header */}
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-sm font-medium text-primary">Portfolio</p>
+            <h2 className="mt-1 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              Featured Work
+            </h2>
+            <p className="mt-2 text-muted-foreground max-w-lg">
+              Selected projects that showcase my approach to building performant, user-focused applications.
+            </p>
+          </div>
           <Link
             href="/work"
-            className="inline-flex items-center justify-center gap-2 h-12 px-6 text-lg rounded-md font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            View all projects
-            <ArrowRight className="h-4 w-4" />
+            View all projects <span aria-hidden="true">&rarr;</span>
           </Link>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {featured.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
       </div>
     </section>
