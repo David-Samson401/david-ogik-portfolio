@@ -2,6 +2,32 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    id: "aurelia-farms",
+    title: "Aurelia Farms: Heritage Pasture Landing Page",
+    description:
+      "Editorial landing page for a regenerative heritage poultry estate. It pairs a cinematic hero with live pasture telemetry and motion driven storytelling.",
+    longDescription:
+      "Aurelia Farms (Acre & Feather, Heritage Pasture Co.) is a one page brand experience for a regenerative poultry estate. The design leans on an editorial art direction: a full bleed hero with a layered telemetry panel, Newsreader serif display type against Plus Jakarta Sans and JetBrains Mono details, and a deep forest and amber palette. Built with Next.js 15, React 19, TypeScript, Tailwind CSS, Radix UI primitives and Framer Motion, the page carries eight sections: hero, trust band, estate, indicators, protocol, provisions, table and impact. Each section uses scroll triggered reveals, animated counters, gauges and sparklines. The hero responds to pointer and scroll with parallax drift and lets visitors switch between Pasture, NDVI and Golden lighting states. Each state restyles the image, overlay, stats and micro chart.",
+    image: "/images/projects/aurelia/hero.jpg",
+    tags: ["Next.js", "React 19", "TypeScript", "Tailwind", "Framer Motion", "Radix UI"],
+    githubUrl: "https://github.com/David-Samson401/aurelia-farms",
+    featured: true,
+    year: 2026,
+    role: "Sole Developer",
+    challenges: [
+      "The hero layers scroll parallax, pointer tracked image drift, animated telemetry numbers and three switchable visual states (Pasture, NDVI, Golden). Each state applies its own image filter, gradient overlay, stat set and sparkline, which means a lot of moving parts to keep smooth and hydration safe",
+      "Delivering a premium, editorial art direction across eight distinct long form sections without the UI collapsing into generic landing page patterns",
+      "Animating dense data panels with gauges, sparklines, staggered counters and marquees while keeping the page accessible and fast on first paint in the App Router",
+      "Holding together fixed navigation, tabbed telemetry, dense stat cards and long form content from small mobile screens to wide desktop without overflow or broken anchor offsets",
+    ],
+    solutions: [
+      "Composed the hero with Framer Motion motion values and springs (useScroll, useTransform, useSpring) and drove every layer from one typed config object, swapping filters, overlays and stats through AnimatePresence so only transform and opacity animate",
+      "Built a token based design system in Tailwind with forest, cream and amber scales, three typefaces, silk easing and layered card shadows, plus reusable motion primitives (Reveal, Stagger, SplitWords, AnimatedNumber, Marquee, SectionLabel) shared across sections",
+      "Kept animation inside focused client components, triggered counters and gauges once via useInView, and used useReducedMotion so reduced motion visitors get final states instantly while static content stays server rendered",
+      "Used fluid clamp() typography, a 12 column grid that stacks gracefully, container padding rules, scroll margin offsets matched by a SmoothScroll helper, and Radix tabs, sheet and accordion for keyboard and touch support",
+    ],
+  },
+  {
     id: "nyumba-find",
     title: "Nyumba Find — Property Search Platform",
     description:
