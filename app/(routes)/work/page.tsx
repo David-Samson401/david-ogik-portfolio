@@ -4,7 +4,7 @@ import WorkFilter from "@/components/sections/work/WorkFilter";
 export const metadata: Metadata = {
   title: "Projects | David Ogik",
   description:
-    "A collection of frontend projects by David Ogik — from production React applications to experimental side projects built with Next.js, TypeScript, and Tailwind CSS.",
+    "A collection of frontend projects by David Ogik, from production React applications to experimental side projects built with Next.js, TypeScript, and Tailwind CSS.",
 };
 
 export default function WorkPage() {

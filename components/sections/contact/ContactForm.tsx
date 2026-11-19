@@ -237,14 +237,14 @@ export default function ContactForm() {
                         Open to Opportunities
                       </h4>
                       <p className="mt-1 text-sm text-muted-foreground">
-                        Freelance, full-time, and contract work
+                        Freelance, full time, and contract work
                       </p>
                       <div className="mt-3 flex flex-wrap gap-1.5">
                         <Badge variant="outline" className="text-xs">
                           Freelance
                         </Badge>
                         <Badge variant="outline" className="text-xs">
-                          Full-time
+                          Full time
                         </Badge>
                         <Badge variant="outline" className="text-xs">
                           Contract

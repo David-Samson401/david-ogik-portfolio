@@ -2,7 +2,7 @@
 
 @layer base {
   :root {
-    /* Base surfaces — deep indigo-tinted blacks */
+    /* Base surfaces: deep indigo tinted blacks */
     --background: hsl(225 30% 4%);
     --foreground: hsl(210 40% 98%);
     --card: hsl(225 25% 7%);
@@ -10,19 +10,19 @@
     --popover: hsl(225 25% 9%);
     --popover-foreground: hsl(210 40% 98%);
 
-    /* Primary accent — vibrant indigo */
+    /* Primary accent: vibrant indigo */
     --primary: hsl(243 75% 59%);
     --primary-foreground: hsl(0 0% 100%);
 
-    /* Secondary — muted navy */
+    /* Secondary: muted navy */
     --secondary: hsl(225 20% 12%);
     --secondary-foreground: hsl(210 40% 90%);
 
-    /* Muted — surface variations */
+    /* Muted: surface variations */
     --muted: hsl(225 20% 10%);
     --muted-foreground: hsl(215 20% 60%);
 
-    /* Accent — cyan highlight for contrast */
+    /* Accent: cyan highlight for contrast */
     --accent: hsl(180 85% 40%);
     --accent-foreground: hsl(0 0% 100%);
 

@@ -16,22 +16,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "David Ogik - Frontend Developer",
+  title: "David Ogik | Frontend Developer",
   description:
-    "Mid-level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS. Based in Kenya, building performant and accessible web applications.",
+    "Mid level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS. Based in Kenya, building performant and accessible web applications.",
   openGraph: {
-    title: "David Ogik - Frontend Developer",
+    title: "David Ogik | Frontend Developer",
     description:
-      "Mid-level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS.",
+      "Mid level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS.",
     url: "https://david-ogik-portfolio-jjvb.vercel.app",
     siteName: "David Ogik Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Ogik - Frontend Developer",
+    title: "David Ogik | Frontend Developer",
     description:
-      "Mid-level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS.",
+      "Mid level frontend developer with 4+ years of experience specializing in React, Next.js, and Tailwind CSS.",
   },
 };
 

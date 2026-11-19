@@ -16,7 +16,7 @@ export default function FeaturedProjects() {
               Featured Work
             </h2>
             <p className="mt-2 text-muted-foreground max-w-lg">
-              Selected projects that showcase my approach to building performant, user-focused applications.
+              Selected projects that showcase my approach to building performant applications that put users first.
             </p>
           </div>
           <Link

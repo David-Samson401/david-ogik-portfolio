@@ -4,7 +4,7 @@ import ContactForm from "@/components/sections/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Contact | David Ogik",
   description:
-    "Get in touch with David Ogik — frontend developer open to freelance, full-time, and contract opportunities. Based in Kenya, working with teams worldwide.",
+    "Get in touch with David Ogik, frontend developer open to freelance, full time, and contract opportunities. Based in Kenya, working with teams worldwide.",
 };
 
 export default function ContactPage() {

@@ -13,7 +13,7 @@ export default function Hero() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-10">
-          {/* Left: Text Content — 3/5 width */}
+          {/* Left: text content, 3/5 width */}
           <div className="text-center lg:text-left lg:col-span-3 lg:py-8">
             {/* Status badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/60 backdrop-blur-sm px-4 py-1.5 text-sm">
@@ -42,7 +42,7 @@ export default function Hero() {
             {/* Subtitle */}
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground max-w-xl mx-auto lg:mx-0">
               I build performant, accessible web applications with React, Next.js, and TypeScript.
-              From OAuth-secured APIs to real-time dashboards — every pixel shipped with intention.
+              From APIs secured with OAuth to real time dashboards, every pixel shipped with intention.
             </p>
 
             {/* CTA Buttons */}
@@ -91,12 +91,12 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: Profile Image — 2/5 width, fills full height */}
+          {/* Right: profile image, 2/5 width, fills full height */}
           <div className="relative lg:col-span-2 flex justify-center">
             <div className="relative w-full max-w-md">
               {/* Decorative glow behind image */}
               <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-primary/20 via-primary/5 to-accent/10 blur-2xl" />
-              {/* Image container — large, fills space */}
+              {/* Image container, large, fills space */}
               <div className="relative w-64 h-80 sm:w-80 sm:h-96 lg:w-full lg:h-[460px] xl:h-[520px] rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
                 <Image
                   src="/images/david-ogik-profile.jpg"
@@ -107,7 +107,7 @@ export default function Hero() {
                   sizes="(max-width: 640px) 256px, (max-width: 1024px) 320px, 40vw"
                 />
               </div>
-              {/* Floating tech tags — outside image so overflow-hidden doesn't clip them */}
+              {/* Floating tech tags placed outside the image so overflow-hidden does not clip them */}
               <div className="absolute bottom-0 left-0 translate-y-[35%] -translate-x-[60%] rounded-lg border border-border/60 bg-card/90 backdrop-blur-sm px-3 py-1.5 text-xs font-medium text-foreground shadow-lg whitespace-nowrap z-10">
                 <span className="text-primary">React</span> · Next.js
               </div>

@@ -6,13 +6,13 @@ const cards = [
     color: "bg-success/10 text-success",
     title: "Performance First",
     description:
-      "98+ Lighthouse scores aren't accidents. I optimize Core Web Vitals from the start — lazy loading, code splitting, and efficient rendering.",
+      "98+ Lighthouse scores aren't accidents. I optimize Core Web Vitals from the start: lazy loading, code splitting, and efficient rendering.",
   },
   {
     color: "bg-primary/10 text-primary",
-    title: "Full-Stack Ready",
+    title: "Full Stack Ready",
     description:
-      "From MongoDB to Cloudinary, I build end-to-end. All projects ship with live demos — I deliver, not just code.",
+      "From MongoDB to Cloudinary, I build end to end. All projects ship with live demos. I deliver, not just code.",
   },
   {
     color: "bg-blue-500/10 text-blue-400",
@@ -24,11 +24,11 @@ const cards = [
     color: "bg-accent/10 text-accent",
     title: "Clean Code",
     description:
-      "Maintainable, documented, tested. I write code my future self — and teammates — will thank me for.",
+      "Maintainable, documented, tested. I write code that my future self and teammates will thank me for.",
   },
   {
     color: "bg-purple-500/10 text-purple-400",
-    title: "The 30-Minute Rule",
+    title: "The 30 Minute Rule",
     description:
       "Stuck? I spend 30 minutes solving independently, then escalate. Efficiency over ego saves everyone time.",
   },

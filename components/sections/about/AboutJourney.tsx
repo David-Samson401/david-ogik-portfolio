@@ -6,7 +6,7 @@ const data = [
     color: "bg-blue-500/10 text-blue-400",
     title: "Analytical Thinking",
     description:
-      "EE taught me to break complex systems into manageable components — exactly what React encourages.",
+      "EE taught me to break complex systems into manageable components, exactly what React encourages.",
   },
   {
     color: "bg-success/10 text-success",
@@ -42,7 +42,7 @@ export default function AboutJourney() {
             <p className="mt-4 text-muted-foreground leading-relaxed">
               When I discovered web development, the same principles applied: understanding data flow, debugging
               complex interactions, and optimizing performance. The transition felt natural because the
-              problem-solving mindset is universal.
+              problem solving mindset is universal.
             </p>
           </div>
 

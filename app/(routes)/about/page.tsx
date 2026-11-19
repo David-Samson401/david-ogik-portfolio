@@ -8,7 +8,7 @@ import AboutCTA from "@/components/sections/about/AboutCTA";
 export const metadata = {
   title: "About | David Ogik",
   description:
-    "Learn about David Ogik - a Mid-Level Frontend Developer with 4+ years of experience building performant web applications.",
+    "Learn about David Ogik, a Mid Level Frontend Developer with 4+ years of experience building performant web applications.",
 };
 
 export default function AboutPage() {

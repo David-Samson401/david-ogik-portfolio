@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
       console.log(`Timestamp: ${new Date().toISOString()}`);
       console.log("=".repeat(50));
       console.warn(
-        "⚠️  RESEND_API_KEY not set — email not sent. Add it to .env.local to enable email delivery.",
+        "⚠️  RESEND_API_KEY not set, so email was not sent. Add it to .env.local to enable email delivery.",
       );
     }
 

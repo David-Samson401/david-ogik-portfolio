@@ -6,7 +6,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)
 ![Vercel](https://img.shields.io/badge/Vercel-Deployed-000?style=flat-square&logo=vercel)
 
-A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend Developer** with 4+ years of experience building production web applications.
+A modern, performant portfolio showcasing my journey as a **Mid Level Frontend Developer** with 4+ years of experience building production web applications.
 
 ## Live Demo
 
@@ -17,15 +17,15 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 ## Features
 
 - **5 Featured Projects** with detailed case studies, challenges & solutions
-- **Dark Theme** -- clean, modern dark interface
-- **Fully Responsive** -- mobile-first design approach
-- **98+ Lighthouse Score** -- optimized for performance
+- **Dark Theme:** clean, modern dark interface
+- **Fully Responsive:** mobile first design approach
+- **98+ Lighthouse Score:** optimized for performance
 - **Contact Form** with Zod validation and Resend email integration
-- **Resume Download** -- PDF resume readily available
-- **Project Filtering** -- filter by technology stack
-- **Modern UI** -- custom components with Tailwind CSS v4
-- **Accessible** -- semantic HTML, keyboard navigation, ARIA labels
-- **Deployed on Vercel** -- CI/CD with GitHub integration
+- **Resume Download:** PDF resume readily available
+- **Project Filtering:** filter by technology stack
+- **Modern UI:** custom components with Tailwind CSS v4
+- **Accessible:** semantic HTML, keyboard navigation, ARIA labels
+- **Deployed on Vercel:** CI/CD with GitHub integration
 
 ---
 
@@ -50,23 +50,23 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 
 ### 1. Flight Search Engine
 
-> Real-time flight comparison with Amadeus API integration
+"> Real time flight comparison with Amadeus API integration
 
 - **Tech:** React, Next.js, OAuth2, Tailwind, REST API
 - **Highlights:** Token management, rate limiting, 98 Lighthouse score
 - [Live Demo](https://flight-search-engine-sandy.vercel.app/) . [GitHub](https://github.com/David-Samson401/flight-search)
 
-### 2. DevEvents - Developer Events Platform
+### 2. DevEvents: Developer Events Platform
 
-> Full-stack event discovery platform for conferences, meetups & hackathons
+> Full stack event discovery platform for conferences, meetups & hackathons
 
 - **Tech:** Next.js, MongoDB, Cloudinary, TypeScript, Tailwind
 - **Highlights:** Image uploads, booking system, event filtering
 - [Live Demo](https://next-crash-project-m6f5.vercel.app/) . [GitHub](https://github.com/David-Samson401/DevEvents)
 
-### 3. Amazon E-Commerce Clone (JavaScript)
+### 3. Amazon Ecommerce Clone (JavaScript)
 
-> Interactive e-commerce interface with vanilla JavaScript
+> Interactive ecommerce interface with vanilla JavaScript
 
 - **Tech:** JavaScript, HTML5, CSS3, LocalStorage, DOM Manipulation
 - **Highlights:** Cart functionality, dynamic rendering, 40+ products
@@ -74,18 +74,18 @@ A modern, performant portfolio showcasing my journey as a **Mid-Level Frontend D
 
 ### 4. Amazon Homepage Clone (CSS)
 
-> Pixel-perfect Amazon homepage recreation
+> Pixel perfect Amazon homepage recreation
 
 - **Tech:** HTML5, CSS3, Flexbox, CSS Grid, Responsive Design
-- **Highlights:** Pure CSS, 20+ sections, mobile-first approach
+- **Highlights:** Pure CSS, 20+ sections, mobile first approach
 - [Live Demo](https://amazon-com-html-css-project.vercel.app/) . [GitHub](https://github.com/David-Samson401/Amazon.com-HTML-CSS-Project)
 
 ### 5. Poll Guru
 
-> Real-time polling application with live updates
+> Real time polling application with live updates
 
 - **Tech:** Svelte, SvelteKit, Tailwind, Chart.js, WebSockets
-- **Highlights:** Real-time updates, data visualization, 1k+ polls
+- **Highlights:** Real time updates, data visualization, 1k+ polls
 - [Live Demo](https://poll-guru.vercel.app) . [GitHub](https://github.com/David-Samson401/poll-guru)
 
 ---
@@ -162,7 +162,7 @@ david-ogik-portfolio/
 Create a `.env.local` file for local development:
 
 ```env
-# Contact form (optional - logs to console if not set)
+# Contact form (optional; logs to console if not set)
 RESEND_API_KEY=your_resend_api_key
 ```
 

@@ -61,11 +61,11 @@ export default function AboutBeyondCode() {
           <div className="flex items-center">
             <div className="w-full rounded-2xl border border-border/60 bg-gradient-to-br from-primary/5 via-primary/10 to-accent/5 p-8 lg:p-12">
               <blockquote className="text-xl sm:text-2xl font-medium text-foreground leading-relaxed">
-                &ldquo;The best code is the code you don&apos;t have to explain
-                — it speaks for itself through clarity and intention.&rdquo;
+                &ldquo;The best code is the code you don&apos;t have to explain.
+                It speaks for itself through clarity and intention.&rdquo;
               </blockquote>
               <p className="mt-6 text-muted-foreground">
-                — My approach to writing maintainable software
+                My approach to writing maintainable software
               </p>
             </div>
           </div>

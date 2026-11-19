@@ -23,14 +23,14 @@ export default function AboutHero() {
             David Ogik
           </h1>
           <p className="mt-3 text-xl sm:text-2xl font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Mid-Level Frontend Developer
+            Mid Level Frontend Developer
           </p>
 
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             <span className="text-foreground font-medium">
               Electrical Engineer turned Frontend Developer.
             </span>{" "}
-            I bring an analytical mindset and systems-thinking approach to
+            I bring an analytical mindset and systems thinking approach to
             building performant, accessible web applications. Based in Kenya,
             working with teams worldwide.
           </p>

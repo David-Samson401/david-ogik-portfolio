@@ -88,7 +88,7 @@ export default function WorkFilter() {
               >
                 <option value="newest">Newest</option>
                 <option value="oldest">Oldest</option>
-                <option value="a-z">A-Z</option>
+                <option value="a-z">A to Z</option>
               </select>
             </div>
           </div>
